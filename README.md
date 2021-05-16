@@ -1,4 +1,4 @@
-# vue-website-starter
+# vue3-website-starter
 
 ## Project setup
 ```
