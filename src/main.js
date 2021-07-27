@@ -1,14 +1,15 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-// import store from "./store";
-import AppButton from "@/components/AppButton.vue";
+import store from "./store";
+import GlobalComponents from "./includes/_globals";
 
 // Create Vue instance
-const app = createApp(App).use(router);
+const app = createApp(App);
 
-// Register Button component globally
-app.component("AppButton", AppButton);
+app.use(store);
+app.use(router);
+app.use(GlobalComponents);
 
 // Mount Vue instance
 app.mount("#app");
