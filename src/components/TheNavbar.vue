@@ -47,7 +47,7 @@
             class="hamburger"
         >
 
-        <AppButton>Get Started</AppButton>
+        <base-button :show-shadow="false">Get Started</base-button>
     </header>
 </template>
 
